@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+	<title>Document</title>
+	<script type="text/javascript" src="Script/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="Script/jquery.easing.1.3.js"></script>
+	<style>
+		.mask { 
+	        color:#C7EDCC;
+	        background-color:#000000;
+	        position:absolute;
+	        left:220px;
+	        width: 20px;
+	        height: 20px;
+	        margin: 10px;
+        }  
+	</style>
+
+</head>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			var top = 10;
+
+			for(var e in $.easing){
+				if(e != 'def'){
+					var div = document.createElement('div');
+					$(div).addClass('mask');
+					$(div).css('top', (top += 30) + 'px');
+
+					(function(name, obj){
+						obj.hover(function(){
+							console.log(name);
+							$(this).animate({
+								left: '+=400px'
+							},1000, name);
+						},function(){
+							$(this).animate({
+								left: '-=400px'
+							},1000, name);
+						});
+					}(e, $(div)));
+
+					$('body').append(div);
+				}
+			}
+		});
+	</script>
+<body></body>
+</html>
+
+height=380
+width=465
+file=50502
+max_vid=71063
+type=lighttpd
+backcolor=000000
+frontcolor=ffffff
+autostart=false
+seccode=3c9a1af3c1911849cf30a0769f00fde7
+repeat=false&showdigits=true
+location=1.swf
+enablejs=true
+mp4=0
+
+http://91sp.vido.ws/getfile.php?VID=50502&mp4=0&seccode=3c9a1af3c1911849cf30a0769f00fde7&max_vid=71063
+file=http://50.7.69.10//dl//9ca47ae35010e2aa4fd70cf7ea413117/53404668//91porn/mp43/50502.mp4
