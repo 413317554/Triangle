@@ -6,7 +6,19 @@
 <title>Examples</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
-<link href="" rel="stylesheet">
+<script type="text/javascript" src="script/sea-debug.js"  id="seajsnode"></script>
+<script type="text/javascript">
+
+	seajs.config({
+		"alias": {
+			"jquery" : "jquery-1.10.2"
+		}
+	});
+
+	seajs.use('jquery',function($){
+		console.log($('body'));
+	});
+</script>
 </head>
 <body>
     
