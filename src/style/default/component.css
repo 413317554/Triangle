@@ -1,23 +1,31 @@
+/**,
+*:after,
+*::before {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}*/
 
+/*html,
+body,
 .st-container,
 .st-pusher,
 .st-content {
 	height: 100%;
-}
+}*/
 
 .st-content {
 	overflow-y: scroll;
 	background: #f3efe0;
-}
-
-.st-content,
-.st-content-inner {
 	position: relative;
 }
+
 
 .st-container {
-	position: relative;
+	position:absolute;
 	overflow: hidden;
+	width: 100%;
+	top:50px;
+	bottom: 0;
 }
 
 .st-pusher {
@@ -25,22 +33,10 @@
 	left: 0;
 	z-index: 99;
 	height: 100%;
-	-webkit-transition: -webkit-transform 0.5s;
-	transition: transform 0.5s;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
 
-.st-pusher::after {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 0;
-	height: 0;
-	background: rgba(0,0,0,0.2);
-	content: '';
-	opacity: 0;
-	-webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
-	transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
-}
 
 .st-menu-open .st-pusher::after {
 	width: 100%;
@@ -53,35 +49,12 @@
 .st-menu {
 	position: absolute;
 	top: 0;
-	left: 0;
-	z-index: 100;
-	visibility: hidden;
-	width: 300px;
+	left: -200px;
+	width: 200px;
 	height: 100%;
-	background: #48a770;
-	-webkit-transition: all 0.5s;
-	transition: all 0.5s;
-}
-
-.st-menu::after {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0,0,0,0.2);
-	content: '';
-	opacity: 1;
-	-webkit-transition: opacity 0.5s;
-	transition: opacity 0.5s;
-}
-
-.st-menu-open .st-menu::after {
-	width: 0;
-	height: 0;
-	opacity: 0;
-	-webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
-	transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+	background: #5579B1;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease; 
 }
 
 /* content style */
@@ -125,27 +98,35 @@
 	color: #fff;
 }
 
+/* Effect 3: Push*/
+.st-effect-3 .st-pusher {
+	left: 200px;
+}
+.st-effect-3 .st-menu{
+	left: 0px;
+}
+
 /* Individual effects */
 
 /* Effect 1: Slide in on top */
-.st-effect-1.st-menu {
+/*.st-effect-1.st-menu {
 	visibility: visible;
 	-webkit-transform: translate3d(-100%, 0, 0);
 	transform: translate3d(-100%, 0, 0);
-}
+}*/
 
-.st-effect-1.st-menu-open .st-effect-1.st-menu {
+/*.st-effect-1.st-menu-open .st-effect-1.st-menu {
 	visibility: visible;
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
-}
+}*/
 
-.st-effect-1.st-menu::after {
+/*.st-effect-1.st-menu::after {
 	display: none;
-}
+}*/
 
 /* Effect 2: Reveal */
-.st-effect-2.st-menu-open .st-pusher {
+/*.st-effect-2.st-menu-open .st-pusher {
 	-webkit-transform: translate3d(300px, 0, 0);
 	transform: translate3d(300px, 0, 0);
 }
@@ -162,32 +143,13 @@
 
 .st-effect-2.st-menu::after {
 	display: none;
-}
+}*/
 
-/* Effect 3: Push*/
-.st-effect-3.st-menu-open .st-pusher {
-	-webkit-transform: translate3d(300px, 0, 0);
-	transform: translate3d(300px, 0, 0);
-}
 
-.st-effect-3.st-menu {
-	-webkit-transform: translate3d(-100%, 0, 0);
-	transform: translate3d(-100%, 0, 0);
-}
-
-.st-effect-3.st-menu-open .st-effect-3.st-menu {
-	visibility: visible;
-	-webkit-transition: -webkit-transform 0.5s;
-	transition: transform 0.5s;
-}
-
-.st-effect-3.st-menu::after {
-	display: none;
-}
 
 /* Effect 4: Slide along */
-.st-effect-4.st-menu-open .st-pusher {
-	-webkit-transform: translate3d(300px, 0, 0);
+/*.st-effect-4.st-menu-open .st-pusher {
+	-webkit-transform: translate3d(250px, 0, 0);
 	transform: translate3d(300px, 0, 0);
 }
 
@@ -201,16 +163,17 @@
 	visibility: visible;
 	-webkit-transition: -webkit-transform 0.5s;
 	transition: transform 0.5s;
+
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
-}
+}*/
 
-.st-effect-4.st-menu::after {
+/*.st-effect-4.st-menu::after {
 	display: none;
-}
+}*/
 
 /* Effect 5: Reverse slide out */
-.st-effect-5.st-menu-open .st-pusher {
+/*.st-effect-5.st-menu-open .st-pusher {
 	-webkit-transform: translate3d(300px, 0, 0);
 	transform: translate3d(300px, 0, 0);
 }
@@ -227,11 +190,11 @@
 	transition: transform 0.5s;
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
-}
+}*/
 
 /* Effect 6: Rotate pusher */
 
-.st-effect-6.st-container {
+/*.st-effect-6.st-container {
 	-webkit-perspective: 1500px;
 	perspective: 1500px;
 }
@@ -267,11 +230,11 @@
 
 .st-effect-6.st-menu::after {
 	display: none;
-}
+}*/
 
 /* Effect 7: 3D rotate in */
 
-.st-effect-7.st-container {
+/*.st-effect-7.st-container {
 	-webkit-perspective: 1500px;
 	perspective: 1500px;
 	-webkit-perspective-origin: 0% 50%;
@@ -303,11 +266,11 @@
 	transition: transform 0.5s;
 	-webkit-transform: translate3d(-100%, 0, 0) rotateY(0deg);
 	transform: translate3d(-100%, 0, 0) rotateY(0deg);
-}
+}*/
 
 /* Effect 8: 3D rotate out */
 
-.st-effect-8.st-container {
+/*.st-effect-8.st-container {
 	-webkit-perspective: 1500px;
 	perspective: 1500px;
 	-webkit-perspective-origin: 0% 50%;
@@ -343,11 +306,11 @@
 
 .st-effect-8.st-menu::after {
 	display: none;
-}
+}*/
 
 /* Effect 9: Scale down pusher */
 
-.st-effect-9.st-container {
+/*.st-effect-9.st-container {
 	-webkit-perspective: 1500px;
 	perspective: 1500px;
 }
@@ -378,11 +341,11 @@
 
 .st-effect-9.st-menu::after {
 	display: none;
-}
+}*/
 
 /* Effect 10: Scale up */
 
-.st-effect-10.st-container {
+/*.st-effect-10.st-container {
 	-webkit-perspective: 1500px;
 	perspective: 1500px;
 	-webkit-perspective-origin: 0% 50%;
@@ -407,11 +370,11 @@
 	transition: transform 0.5s;
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
-}
+}*/
 
 /* Effect 11: Scale and rotate pusher */
 
-.st-effect-11.st-container {
+/*.st-effect-11.st-container {
 	-webkit-perspective: 1500px;
 	perspective: 1500px;
 }
@@ -442,11 +405,11 @@
 
 .st-effect-11.st-menu::after {
 	display: none;
-}
+}*/
 
 /* Effect 12: Open door */
 
-.st-effect-12.st-container {
+/*.st-effect-12.st-container {
 	-webkit-perspective: 1500px;
 	perspective: 1500px;
 }
@@ -479,11 +442,11 @@
 
 .st-effect-12.st-menu::after {
 	display: none;
-}
+}*/
 
 /* Effect 13: Fall down */
 
-.st-effect-13.st-container {
+/*.st-effect-13.st-container {
 	-webkit-perspective: 1500px;
 	perspective: 1500px;
 	-webkit-perspective-origin: 0% 50%;
@@ -512,11 +475,11 @@
 	transform: translate3d(0, 0, 0);
 	-webkit-transition-speed: 0.2s;
 	transition-speed: 0.2s;
-}
+}*/
 
 /* Effect 14: Delayed 3D rotate */
 
-.st-effect-14.st-container {
+/*.st-effect-14.st-container {
 	-webkit-perspective: 1500px;
 	perspective: 1500px;
 	-webkit-perspective-origin: 0% 50%;
@@ -552,10 +515,10 @@
 	transition-property: transform;
 	-webkit-transform: translate3d(-100%, 0, 0) rotateY(0deg);
 	transform: translate3d(-100%, 0, 0) rotateY(0deg);
-}
+}*/
 
 /* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
-.no-csstransforms3d .st-pusher,
+/*.no-csstransforms3d .st-pusher,
 .no-js .st-pusher {
 	padding-left: 300px;
-}
+}*/
