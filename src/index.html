@@ -27,10 +27,45 @@
       margin-top: 100px;
       border-top: 15px solid #000;
     }
+    .donghua{
+        animation: myfirst 2s ease-in-out 2s infinite alternate;
+        -moz-animation: myfirst 2s ease-in-out 2s infinite alternate; /* Firefox */
+        -webkit-animation: myfirst 2s ease-in-out 2s infinite alternate;  /* Safari 和 Chrome */
+        -o-animation: myfirst 2s ease-in-out 2s infinite alternate;
+    }
+    @keyframes myfirst{
+      0%   {left:0px; top:0px;z-index: 999}
+      25%  { left:200px; top:0px;z-index: 999}
+      50%  { left:200px; top:200px;z-index: 999}
+      75%  { left:0px; top:200px;z-index: 999}
+      100% { left:0px; top:0px;z-index: 0}
+    }
+    @-moz-keyframes myfirst{
+      0%   {left:0px; top:0px;z-index: 999}
+      25%  { left:200px; top:0px;z-index: 999}
+      50%  { left:200px; top:200px;z-index: 999}
+      75%  { left:0px; top:200px;z-index: 999}
+      100% { left:0px; top:0px;z-index: 0}
+    }
+    @-webkit-keyframes myfirst{
+      0%   {left:0px; top:0px;z-index: 999}
+      25%  { left:200px; top:0px;z-index: 999}
+      50%  { left:200px; top:200px;z-index: 999}
+      75%  { left:0px; top:200px;z-index: 999}
+      100% { left:0px; top:0px;z-index: 0}
+    }
+    @-o-keyframes myfirst{
+      0%   {left:0px; top:0px;z-index: 999}
+      25%  { left:200px; top:0px;z-index: 999}
+      50%  { left:200px; top:200px;z-index: 999}
+      75%  { left:0px; top:200px;z-index: 999}
+      100% { left:0px; top:0px;z-index: 0}
+    }
   </style>
 </head>
 <body>
 
+<<<<<<< HEAD
 	<div class="navbar navbar-inverse navbar-fixed-top header" role="navigation">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -175,6 +210,148 @@
 			</p>
 			<p></div>
 		</footer>
+=======
+  <div class="navbar navbar-inverse navbar-fixed-top header" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">X X X</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#">主页</a>
+          </li>
+          <li>
+            <a href="#about">关于</a>
+          </li>
+          <li>
+            <a href="#contact">版权</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="row starter-template">
+
+      <div class="col-6 col-sm-6 col-lg-4 donghua">
+        <h2>Heading</h2>
+        <p>
+          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+        </p>
+        <p>
+          <a class="btn btn-default" href="#" role="button">View details »</a>
+        </p>
+      </div>
+
+      <div class="col-6 col-sm-6 col-lg-4">
+        <h2>Heading</h2>
+        <p>
+          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+        </p>
+        <p>
+          <a class="btn btn-default" href="#" role="button">View details »</a>
+        </p>
+      </div>
+
+      <div class="col-6 col-sm-6 col-lg-4">
+        <h2>Heading</h2>
+        <p>
+          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+        </p>
+        <p>
+          <a class="btn btn-default" href="#" role="button">View details »</a>
+        </p>
+      </div>
+
+      <div class="col-6 col-sm-6 col-lg-4">
+        <h2>Heading</h2>
+        <p>
+          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+        </p>
+        <p>
+          <a class="btn btn-default" href="#" role="button">View details »</a>
+        </p>
+      </div>
+
+      <div class="col-6 col-sm-6 col-lg-4">
+        <h2>Heading</h2>
+        <p>
+          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+        </p>
+        <p>
+          <a class="btn btn-default" href="#" role="button">View details »</a>
+        </p>
+      </div>
+
+      <div class="col-6 col-sm-6 col-lg-4">
+        <h2>Heading</h2>
+        <p>
+          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+        </p>
+        <p>
+          <a class="btn btn-default" href="#" role="button">View details »</a>
+        </p>
+      </div>
+
+      <div class="col-6 col-sm-6 col-lg-4">
+        <h2>Heading</h2>
+        <p>
+          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+        </p>
+        <p>
+          <a class="btn btn-default" href="#" role="button">View details »</a>
+        </p>
+      </div>
+
+      <div class="col-6 col-sm-6 col-lg-4">
+        <h2>Heading</h2>
+        <p>
+          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+        </p>
+        <p>
+          <a class="btn btn-default" href="#" role="button">View details »</a>
+        </p>
+      </div>
+
+      <div class="col-6 col-sm-6 col-lg-4">
+        <h2>Heading</h2>
+        <p>
+          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+        </p>
+        <p>
+          <a class="btn btn-default" href="#" role="button">View details »</a>
+        </p>
+      </div>
+
+      <div class="col-6 col-sm-6 col-lg-4">
+        <h2>Heading</h2>
+        <p>
+          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+        </p>
+        <p>
+          <a class="btn btn-default" href="#" role="button">View details »</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bs-footer" role="contentinfo">
+      <div class="container">
+            <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+            <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+            <p>Bootstrap中文文档版权归<a href="http://www.bootcss.com/">Bootstrap中文网</a>及<a href="mailto:wangsai@bootcss.com">译者</a>所有。</p><p>
+      </div>
+  </footer>
+>>>>>>> 137c17b5532dff62aac4177be4351d4fa0af14f3
 
 </body>
 	</html>
