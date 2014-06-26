@@ -1,0 +1,21 @@
+@media (min-width: 768px) {
+  .hh-navbar-logo {
+    color: #000000;
+    background-color: #d98218;
+  }
+  .hh-navbar-fixed-left {
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    border-right: 1px solid #eee;
+  }
+  .container {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .navbar-collapse {
+    padding: 0px;
+  }
+}
