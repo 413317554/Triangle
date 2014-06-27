@@ -1,6 +1,4 @@
 
-
-
 @media (min-width:768px)
 {
 	.hh-navbar-logo{
@@ -14,28 +12,59 @@
  		}
 
 		a{
-			padding: 25px 0px;
 			display: block;
 			.transition(0.5s ease all);
 		}
 	}
+
 	.hh-navbar-fixed-left{
 		height: 100%;
-		width: 100px;
+		width: @hh-navbar-fixed-left-width;
 		position: fixed;
 		border-right: 1px solid transparent;
+		top: 0px;
+		left: 0px;
 	}
-	.container{
-		padding-right: 0px;
-		padding-left: 0px;
-		margin-right: auto;
-		margin-left: auto;
-	}
+
   	.navbar-collapse{
     	padding: 0px;
  	}
 
+ 	.navbar-header{
+ 		float: none;
+ 	}
+
  	.navbar{
  		border:0px;
+ 		border-right: 1px solid #DDDDDD;
  	}
+
+ 	.navbar-nav	{
+		float: none;
+		> li{
+			float: none;
+		}
+ 		> li > a{
+ 			padding: 35px 0px;
+			text-align: center;
+			border-bottom: 1px solid #DDDDDD;
+
+ 			&:hover,
+ 			&:focus{
+ 				color: #428bca;
+ 				background-color: red;
+ 			}
+ 			&:before{
+ 				
+ 			}
+ 		}
+ 		> .active > a{
+		 	&,
+		    &:hover,
+		    &:focus {
+		    	color: #428bca;
+		    }
+ 		}
+ 	}
+
 }

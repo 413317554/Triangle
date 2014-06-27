@@ -1,6 +1,6 @@
 @media (min-width: 768px) {
   .hh-navbar-logo {
-    background-color: #d98218;
+    background-color: #428bca;
     text-align: center;
   }
   .hh-navbar-logo .navbar-brand {
@@ -8,27 +8,47 @@
     float: none;
   }
   .hh-navbar-logo a {
-    padding: 25px 0px;
     display: block;
     -webkit-transition: 0.5s ease all;
     transition: 0.5s ease all;
   }
   .hh-navbar-fixed-left {
     height: 100%;
-    width: 100px;
+    width: 150px;
     position: fixed;
     border-right: 1px solid transparent;
-  }
-  .container {
-    padding-right: 0px;
-    padding-left: 0px;
-    margin-right: auto;
-    margin-left: auto;
+    top: 0px;
+    left: 0px;
   }
   .navbar-collapse {
     padding: 0px;
   }
+  .navbar-header {
+    float: none;
+  }
   .navbar {
     border: 0px;
+    border-right: 1px solid #DDDDDD;
+  }
+  .navbar-nav {
+    float: none;
+  }
+  .navbar-nav > li {
+    float: none;
+  }
+  .navbar-nav > li > a {
+    padding: 35px 0px;
+    text-align: center;
+    border-bottom: 1px solid #DDDDDD;
+  }
+  .navbar-nav > li > a:hover,
+  .navbar-nav > li > a:focus {
+    color: #428bca;
+    background-color: red;
+  }
+  .navbar-nav > .active > a,
+  .navbar-nav > .active > a:hover,
+  .navbar-nav > .active > a:focus {
+    color: #428bca;
   }
 }
