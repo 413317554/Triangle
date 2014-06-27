@@ -1,6 +1,6 @@
 @media (min-width: 768px) {
   .hh-navbar-logo {
-    background-color: #428bca;
+    background-color: #4ad391;
     text-align: center;
   }
   .hh-navbar-logo .navbar-brand {
@@ -40,6 +40,8 @@
     padding: 35px 0px;
     text-align: center;
     border-bottom: 1px solid #DDDDDD;
+    font-family: Michroma, 'Segoe UI Light', 'Segoe UI', 'Segoe UI WP', 'Microsoft Jhenghei', '微软雅黑', tahoma, 'Hiragino Sans GB W3';
+    font-size: 20px;
   }
   .navbar-nav > li > a:hover,
   .navbar-nav > li > a:focus {
